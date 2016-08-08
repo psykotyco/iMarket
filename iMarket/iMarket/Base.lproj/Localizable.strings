@@ -8,14 +8,18 @@
 
 // Product Name
 
-"peasName"  = "Peas";
-"eggsName"  = "Eggs";
-"milkName"  = "Milk";
-"beansName" = "Beans";
+"peas_name"  = "Peas";
+"eggs_name"  = "Eggs";
+"milk_name"  = "Milk";
+"beans_name" = "Beans";
 
 // Product Description
 
-"peasDescription"   = "";
-"eggsDescription"   = "";
-"milkDescription"   = "";
-"beansDescription"  = "";
+"peas_description"   = "";
+"eggs_description"   = "";
+"milk_description"   = "";
+"beans_description"  = "";
+
+// Layout Title
+
+"productList_navigationBar_title" = "Shop";

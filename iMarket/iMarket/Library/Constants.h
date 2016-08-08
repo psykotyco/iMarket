@@ -22,6 +22,12 @@ extern CGFloat const    Product_Prices[];
 // Currency
 extern NSString *const Default_Currency_Symbol;
 
+// Layout Titles
+extern NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key;
+
+// Images
+extern NSString *const Image_Right_Arrow;
+
 @interface Constants : NSObject
 
 @end

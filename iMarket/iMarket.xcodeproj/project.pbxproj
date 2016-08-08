@@ -21,6 +21,8 @@
 		34A9F5AE1D58EE6100E649CA /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5AD1D58EE6100E649CA /* ProductDetailViewController.m */; };
 		34A9F5B31D58EF2200E649CA /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5B21D58EF2200E649CA /* Product.m */; };
 		34A9F5B81D58F6D300E649CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34A9F5BA1D58F6D300E649CA /* Localizable.strings */; };
+		34A9F5BE1D59062600E649CA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5BD1D59062600E649CA /* BaseViewController.m */; };
+		34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5C21D59077600E649CA /* StyleSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,11 @@
 		34A9F5B11D58EF2200E649CA /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		34A9F5B21D58EF2200E649CA /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		34A9F5B91D58F6D300E649CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		34A9F5BC1D59062600E649CA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		34A9F5BD1D59062600E649CA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		34A9F5BF1D59067B00E649CA /* BaseViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerProtocol.h; sourceTree = "<group>"; };
+		34A9F5C11D59077600E649CA /* StyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleSheet.h; sourceTree = "<group>"; };
+		34A9F5C21D59077600E649CA /* StyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +142,7 @@
 		34408B631D586AA9006BC50E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34A9F5BB1D59060600E649CA /* Base */,
 				34A9F5AB1D58EE3C00E649CA /* ProductDetail */,
 				34408B641D586AD1006BC50E /* ProductList */,
 			);
@@ -184,6 +192,7 @@
 		34A9F5A31D58EDCC00E649CA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				34A9F5C01D59073800E649CA /* StyleSheet */,
 				34A9F5A41D58EDCC00E649CA /* Helpers */,
 			);
 			path = Utilities;
@@ -222,6 +231,25 @@
 				34A9F5B21D58EF2200E649CA /* Product.m */,
 			);
 			path = Product;
+			sourceTree = "<group>";
+		};
+		34A9F5BB1D59060600E649CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				34A9F5BF1D59067B00E649CA /* BaseViewControllerProtocol.h */,
+				34A9F5BC1D59062600E649CA /* BaseViewController.h */,
+				34A9F5BD1D59062600E649CA /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		34A9F5C01D59073800E649CA /* StyleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				34A9F5C11D59077600E649CA /* StyleSheet.h */,
+				34A9F5C21D59077600E649CA /* StyleSheet.m */,
+			);
+			path = StyleSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */,
 				34408B671D586B0B006BC50E /* ProductListViewController.m in Sources */,
+				34A9F5BE1D59062600E649CA /* BaseViewController.m in Sources */,
 				34A9F5A81D58EDCC00E649CA /* DataManager.m in Sources */,
 				34A9F5AA1D58EDCC00E649CA /* UrlHelper.m in Sources */,
 				34A9F5B31D58EF2200E649CA /* Product.m in Sources */,

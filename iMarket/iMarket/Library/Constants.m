@@ -16,16 +16,16 @@ NSString *const Segue_navigate_product_detail_from_products_list = @"ShowProduct
 
 int const Product_Number = 4;
 NSString *const Product_Localizable_Names[] = {
-    @"peasName",
-    @"eggsName",
-    @"milkName",
-    @"beansName"};
+    @"peas_name",
+    @"eggs_name",
+    @"milk_name",
+    @"beans_name"};
 
 NSString *const Product_Localizable_Descriptions[] = {
-    @"peasDescription",
-    @"eggsDescription",
-    @"milkDescription",
-    @"beansDescription"};
+    @"peas_description",
+    @"eggs_description",
+    @"milk_description",
+    @"beans_description"};
 
 NSString *const  Product_Image_Name[] = {
     @"Peas",
@@ -41,7 +41,17 @@ CGFloat const Product_Prices[] = {
     0.73};
 
 //// Currency
+
 NSString *const Default_Currency_Symbol = @"$";
+
+
+//Layout Titles
+
+NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key = @"productList_navigationBar_title";
+
+// Images
+
+NSString *const Image_Right_Arrow = @"RightArrow";
 
 @implementation Constants
 

@@ -9,12 +9,14 @@
 #import "ProductListViewController.h"
 
 #import "DataManager.h"
+#import "Constants.h"
 #import "Product.h"
 
 static NSString *const kProductList_Cell_Reuse_Identifier = @"ProductListCellReuseIdentifier";
-static int const kProduct_Cell_Image_Tag = 10;
-static int const kProduct_Cell_Name_Tag = 11;
-static int const kProduct_Cell_Price_Tag = 12;
+static CGFloat const kProductList_Cell_Height = 100.0f;
+static int const kProductList_Cell_Image_Tag = 10;
+static int const kProductList_Cell_Name_Tag = 11;
+static int const kProductList_Cell_Price_Tag = 12;
 
 @interface ProductListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -44,6 +46,10 @@ static int const kProduct_Cell_Price_Tag = 12;
     });
 }
 
+- (void) customizeNavigationBar {
+    [self setTitle:NSLocalizedString(Layout_ProductList_NavigationBar_Title_Localizable_Key, nil)];
+}
+
 #pragma mark - ---- ---- UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -55,9 +61,9 @@ static int const kProduct_Cell_Price_Tag = 12;
     
     Product *product = [self.products objectAtIndex:indexPath.row];
     
-    UIImageView *productImage = [result.contentView viewWithTag:kProduct_Cell_Image_Tag];
-    UILabel *productName = [result.contentView viewWithTag:kProduct_Cell_Name_Tag];
-    UILabel *productPrice = [result.contentView viewWithTag:kProduct_Cell_Price_Tag];
+    UIImageView *productImage = [result.contentView viewWithTag:kProductList_Cell_Image_Tag];
+    UILabel *productName = [result.contentView viewWithTag:kProductList_Cell_Name_Tag];
+    UILabel *productPrice = [result.contentView viewWithTag:kProductList_Cell_Price_Tag];
     
     productImage.image = [UIImage imageNamed:product.imageName];
     productName.text = product.name;
@@ -67,6 +73,14 @@ static int const kProduct_Cell_Price_Tag = 12;
 }
 
 #pragma mark - ---- ---- UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kProductList_Cell_Height;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:Segue_navigate_product_detail_from_products_list sender:self];
+}
 
 #pragma mark - ---- PUBLIC
 

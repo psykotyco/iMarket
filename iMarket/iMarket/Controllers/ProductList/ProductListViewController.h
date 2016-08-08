@@ -6,8 +6,8 @@
 //  Copyright © 2016 Ricardo Suarez. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ProductListViewController : UIViewController
+@interface ProductListViewController : BaseViewController
 
 @end
