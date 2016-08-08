@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  iMarket
+
+  Created by Ricardo Suarez on 08/08/16.
+  Copyright © 2016 Ricardo Suarez. All rights reserved.
+*/
+
+// Product Name
+
+"peasName"  = "Peas";
+"eggsName"  = "Eggs";
+"milkName"  = "Milk";
+"beansName" = "Beans";
+
+// Product Description
+
+"peasDescription"   = "";
+"eggsDescription"   = "";
+"milkDescription"   = "";
+"beansDescription"  = "";
