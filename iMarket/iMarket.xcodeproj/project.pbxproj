@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34408B401D586A98006BC50E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34408B3F1D586A98006BC50E /* main.m */; };
+		34408B431D586A98006BC50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34408B421D586A98006BC50E /* AppDelegate.m */; };
+		34408B491D586A98006BC50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34408B471D586A98006BC50E /* Main.storyboard */; };
+		34408B4B1D586A98006BC50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34408B4A1D586A98006BC50E /* Assets.xcassets */; };
+		34408B4E1D586A98006BC50E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34408B4C1D586A98006BC50E /* LaunchScreen.storyboard */; };
+		34408B591D586A98006BC50E /* iMarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34408B581D586A98006BC50E /* iMarketTests.m */; };
+		34408B671D586B0B006BC50E /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34408B661D586B0B006BC50E /* ProductListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34408B551D586A98006BC50E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34408B331D586A98006BC50E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34408B3A1D586A98006BC50E;
+			remoteInfo = iMarket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34408B3B1D586A98006BC50E /* iMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34408B3F1D586A98006BC50E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34408B411D586A98006BC50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34408B421D586A98006BC50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34408B481D586A98006BC50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34408B4A1D586A98006BC50E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34408B4D1D586A98006BC50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34408B4F1D586A98006BC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34408B541D586A98006BC50E /* iMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34408B581D586A98006BC50E /* iMarketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMarketTests.m; sourceTree = "<group>"; };
+		34408B5A1D586A98006BC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34408B651D586B0B006BC50E /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		34408B661D586B0B006BC50E /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34408B381D586A98006BC50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34408B511D586A98006BC50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34408B321D586A98006BC50E = {
+			isa = PBXGroup;
+			children = (
+				34408B3D1D586A98006BC50E /* iMarket */,
+				34408B571D586A98006BC50E /* iMarketTests */,
+				34408B3C1D586A98006BC50E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34408B3C1D586A98006BC50E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34408B3B1D586A98006BC50E /* iMarket.app */,
+				34408B541D586A98006BC50E /* iMarketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34408B3D1D586A98006BC50E /* iMarket */ = {
+			isa = PBXGroup;
+			children = (
+				34408B631D586AA9006BC50E /* Controllers */,
+				34408B411D586A98006BC50E /* AppDelegate.h */,
+				34408B421D586A98006BC50E /* AppDelegate.m */,
+				34408B471D586A98006BC50E /* Main.storyboard */,
+				34408B4A1D586A98006BC50E /* Assets.xcassets */,
+				34408B4C1D586A98006BC50E /* LaunchScreen.storyboard */,
+				34408B4F1D586A98006BC50E /* Info.plist */,
+				34408B3E1D586A98006BC50E /* Supporting Files */,
+			);
+			path = iMarket;
+			sourceTree = "<group>";
+		};
+		34408B3E1D586A98006BC50E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34408B3F1D586A98006BC50E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34408B571D586A98006BC50E /* iMarketTests */ = {
+			isa = PBXGroup;
+			children = (
+				34408B581D586A98006BC50E /* iMarketTests.m */,
+				34408B5A1D586A98006BC50E /* Info.plist */,
+			);
+			path = iMarketTests;
+			sourceTree = "<group>";
+		};
+		34408B631D586AA9006BC50E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34408B641D586AD1006BC50E /* ProductList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34408B641D586AD1006BC50E /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				34408B651D586B0B006BC50E /* ProductListViewController.h */,
+				34408B661D586B0B006BC50E /* ProductListViewController.m */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34408B3A1D586A98006BC50E /* iMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34408B5D1D586A98006BC50E /* Build configuration list for PBXNativeTarget "iMarket" */;
+			buildPhases = (
+				34408B371D586A98006BC50E /* Sources */,
+				34408B381D586A98006BC50E /* Frameworks */,
+				34408B391D586A98006BC50E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMarket;
+			productName = iMarket;
+			productReference = 34408B3B1D586A98006BC50E /* iMarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34408B531D586A98006BC50E /* iMarketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34408B601D586A98006BC50E /* Build configuration list for PBXNativeTarget "iMarketTests" */;
+			buildPhases = (
+				34408B501D586A98006BC50E /* Sources */,
+				34408B511D586A98006BC50E /* Frameworks */,
+				34408B521D586A98006BC50E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34408B561D586A98006BC50E /* PBXTargetDependency */,
+			);
+			name = iMarketTests;
+			productName = iMarketTests;
+			productReference = 34408B541D586A98006BC50E /* iMarketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34408B331D586A98006BC50E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Ricardo Suarez";
+				TargetAttributes = {
+					34408B3A1D586A98006BC50E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					34408B531D586A98006BC50E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 34408B3A1D586A98006BC50E;
+					};
+				};
+			};
+			buildConfigurationList = 34408B361D586A98006BC50E /* Build configuration list for PBXProject "iMarket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34408B321D586A98006BC50E;
+			productRefGroup = 34408B3C1D586A98006BC50E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34408B3A1D586A98006BC50E /* iMarket */,
+				34408B531D586A98006BC50E /* iMarketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34408B391D586A98006BC50E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34408B4E1D586A98006BC50E /* LaunchScreen.storyboard in Resources */,
+				34408B4B1D586A98006BC50E /* Assets.xcassets in Resources */,
+				34408B491D586A98006BC50E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34408B521D586A98006BC50E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34408B371D586A98006BC50E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34408B671D586B0B006BC50E /* ProductListViewController.m in Sources */,
+				34408B431D586A98006BC50E /* AppDelegate.m in Sources */,
+				34408B401D586A98006BC50E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34408B501D586A98006BC50E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34408B591D586A98006BC50E /* iMarketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34408B561D586A98006BC50E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34408B3A1D586A98006BC50E /* iMarket */;
+			targetProxy = 34408B551D586A98006BC50E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34408B471D586A98006BC50E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34408B481D586A98006BC50E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34408B4C1D586A98006BC50E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34408B4D1D586A98006BC50E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34408B5B1D586A98006BC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34408B5C1D586A98006BC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34408B5E1D586A98006BC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iMarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.iMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34408B5F1D586A98006BC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iMarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.iMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		34408B611D586A98006BC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.iMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMarket.app/iMarket";
+			};
+			name = Debug;
+		};
+		34408B621D586A98006BC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsm.iMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMarket.app/iMarket";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34408B361D586A98006BC50E /* Build configuration list for PBXProject "iMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34408B5B1D586A98006BC50E /* Debug */,
+				34408B5C1D586A98006BC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34408B5D1D586A98006BC50E /* Build configuration list for PBXNativeTarget "iMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34408B5E1D586A98006BC50E /* Debug */,
+				34408B5F1D586A98006BC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		34408B601D586A98006BC50E /* Build configuration list for PBXNativeTarget "iMarketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34408B611D586A98006BC50E /* Debug */,
+				34408B621D586A98006BC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34408B331D586A98006BC50E /* Project object */;
+}
