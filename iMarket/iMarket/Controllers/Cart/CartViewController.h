@@ -6,8 +6,8 @@
 //  Copyright © 2016 Ricardo Suarez. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface CartViewController : UIViewController
+@interface CartViewController : BaseViewController
 
 @end

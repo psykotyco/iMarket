@@ -28,7 +28,7 @@ extern NSString *const Image_Right_Arrow;
 extern NSString *const Default_Currency_Symbol;
 
 // Product Detail
-extern NSInteger const Default_Items_Number_Add_To_Cart;
+extern NSInteger const Default_Items_Number_Add_Remove_To_Cart;
 
 // Notifications
 extern NSString *const Notification_Cart_Product_Added;

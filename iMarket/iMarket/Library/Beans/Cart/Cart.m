@@ -89,4 +89,14 @@
     return nil;
 }
 
+- (NSInteger) getTotalProductsInCart {
+    NSInteger result = 0;
+    
+    for (Product *product in self.productsInCart) {
+        result += [self getProductQuantityWithProductId:product.identifier];
+    }
+    
+    return result;
+}
+
 @end

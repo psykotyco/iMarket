@@ -20,5 +20,6 @@
 - (void) removeProduct:(Product *) product quantity:(NSInteger) quantity;
 - (NSInteger) getProductQuantityWithProductId:(NSString *) productId;
 - (Product *) getProductInCartWithProductId:(NSString *) productId;
+- (NSInteger) getTotalProductsInCart;
 
 @end

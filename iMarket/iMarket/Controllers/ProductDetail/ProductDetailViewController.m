@@ -67,7 +67,7 @@
 
 - (IBAction)addToCartPressed:(id)sender {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [[DataManager sharedInstance] addProductToCart:self.product quantity:Default_Items_Number_Add_To_Cart];
+        [[DataManager sharedInstance] addProductToCart:self.product quantity:Default_Items_Number_Add_Remove_To_Cart];
         dispatch_async(dispatch_get_main_queue(), ^{
             
         });

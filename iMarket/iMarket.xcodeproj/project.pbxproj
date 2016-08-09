@@ -160,10 +160,10 @@
 		34408B631D586AA9006BC50E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				34D813751D5A608F00C5D708 /* Cart */,
 				34A9F5BB1D59060600E649CA /* Base */,
 				34A9F5AB1D58EE3C00E649CA /* ProductDetail */,
 				34408B641D586AD1006BC50E /* ProductList */,
+				34D813751D5A608F00C5D708 /* Cart */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

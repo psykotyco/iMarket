@@ -57,17 +57,17 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-rV-aX3" userLabel="Label - Product Name">
-                                                    <rect key="frame" x="77" y="33" width="388.5" height="32.5"/>
+                                                    <rect key="frame" x="73.5" y="33" width="392" height="32.5"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-mB-0rh" userLabel="Label - Product Price">
                                                     <rect key="frame" x="485.5" y="37.5" width="46.5" height="23"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-BJ-ACA" userLabel="Image View - Arrow">
@@ -87,7 +87,7 @@
                                                 <constraint firstItem="lur-pq-OOD" firstAttribute="top" secondItem="JyL-ll-Bnb" secondAttribute="topMargin" constant="20" id="Rt8-OE-lZt"/>
                                                 <constraint firstItem="Cae-mB-0rh" firstAttribute="centerY" secondItem="fpx-rV-aX3" secondAttribute="centerY" id="XIS-GO-aXV"/>
                                                 <constraint firstAttribute="trailing" secondItem="Cae-mB-0rh" secondAttribute="trailing" constant="20" id="bVX-Kz-ys7"/>
-                                                <constraint firstItem="fpx-rV-aX3" firstAttribute="leading" secondItem="lur-pq-OOD" secondAttribute="trailing" constant="14" id="d7A-Vb-v2A"/>
+                                                <constraint firstItem="fpx-rV-aX3" firstAttribute="leading" secondItem="lur-pq-OOD" secondAttribute="trailing" constant="10" id="d7A-Vb-v2A"/>
                                                 <constraint firstItem="lur-pq-OOD" firstAttribute="leading" secondItem="JyL-ll-Bnb" secondAttribute="leading" constant="20" id="eX3-Zm-qK0"/>
                                                 <constraint firstItem="2OB-BJ-ACA" firstAttribute="centerY" secondItem="JyL-ll-Bnb" secondAttribute="centerY" id="gXe-gu-tDO"/>
                                                 <constraint firstItem="2OB-BJ-ACA" firstAttribute="leading" secondItem="Cae-mB-0rh" secondAttribute="trailing" constant="20" id="nyi-Yg-V1t"/>
@@ -172,34 +172,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kB-CD-ofe" userLabel="View - Detail Container">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kB-CD-ofe" userLabel="View - Detail Container">
                                 <rect key="frame" x="0.0" y="64" width="600" height="459.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJB-sF-3hB" userLabel="View - Product Info">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJB-sF-3hB" userLabel="View - Product Info">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYd-NI-yk6" userLabel="Image View - Product Image">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYd-NI-yk6" userLabel="Image View - Product Image">
                                                 <rect key="frame" x="20" y="20" width="75" height="75"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="aYd-NI-yk6" secondAttribute="height" multiplier="1:1" id="3l7-vl-XvQ"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svO-KY-WPD" userLabel="Label - Product Name">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svO-KY-WPD" userLabel="Label - Product Name">
                                                 <rect key="frame" x="115" y="20" width="42" height="20.5"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-ne-V0e" userLabel="Label - Product Price">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-ne-V0e" userLabel="Label - Product Price">
                                                 <rect key="frame" x="115" y="60" width="42" height="20.5"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3x5-ig-kCG" userLabel="Button - Add to Cart">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3x5-ig-kCG" userLabel="Button - Add to Cart">
                                                 <rect key="frame" x="534" y="42.5" width="46" height="30"/>
                                                 <animations/>
                                                 <state key="normal" title="Button"/>
@@ -228,7 +228,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cpS-dq-kSc" userLabel="Text View - Product Description">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cpS-dq-kSc" userLabel="Text View - Product Description">
                                         <rect key="frame" x="0.0" y="115" width="600" height="344.5"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,15 +250,15 @@
                                     <constraint firstAttribute="trailing" secondItem="cpS-dq-kSc" secondAttribute="trailing" id="yAw-Sr-UEL"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFy-Yu-rwD" userLabel="View - Bottom Cart">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFy-Yu-rwD" userLabel="View - Bottom Cart">
                                 <rect key="frame" x="0.0" y="523.5" width="600" height="76.5"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9R-2t-Zup" userLabel="View - Loading">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9R-2t-Zup" userLabel="View - Loading">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="P0x-rA-vQ0">
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="P0x-rA-vQ0">
                                         <rect key="frame" x="282" y="249" width="37" height="37"/>
                                         <animations/>
                                     </activityIndicatorView>
@@ -341,18 +341,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMt-eY-027" userLabel="View - Summary">
                                 <rect key="frame" x="0.0" y="148" width="600" height="91"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-bh-Yfb" userLabel="Label - Total Items">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-bh-Yfb" userLabel="Label - Total Products">
                                         <rect key="frame" x="20" y="20" width="42" height="20.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qv-AV-ht1" userLabel="Label - Total Price">
                                         <rect key="frame" x="20" y="50.5" width="42" height="20.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-be-V1W" userLabel="Button - Change Currency">
@@ -377,6 +377,75 @@
                                 <rect key="frame" x="0.0" y="239" width="600" height="361"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductCartCellReuseIdentifier" rowHeight="100" id="8Wk-OB-WwL" userLabel="Cart ProductCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Wk-OB-WwL" id="IHc-9f-pxr">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Txj-k0-Zqy" userLabel="Image View - Product Image">
+                                                    <rect key="frame" x="20" y="28" width="43.5" height="43.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Txj-k0-Zqy" secondAttribute="height" multiplier="1:1" id="SOE-sX-ypp"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cP2-Tg-NLi" userLabel="Label - Product Name">
+                                                    <rect key="frame" x="73.5" y="28" width="64" height="32.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUF-XN-IMy" userLabel="Label - Product Price">
+                                                    <rect key="frame" x="73.5" y="62" width="46.5" height="23"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhG-qd-PAr" userLabel="Label - Product Quantity">
+                                                    <rect key="frame" x="485" y="39.5" width="42" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-D0-Bq6" userLabel="Button - Remove Product">
+                                                    <rect key="frame" x="537" y="32" width="35" height="35"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="UCU-OV-wfl"/>
+                                                        <constraint firstAttribute="width" secondItem="bOf-D0-Bq6" secondAttribute="height" multiplier="1:1" id="b7Y-Mz-1Fb"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Trash"/>
+                                                </button>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="cP2-Tg-NLi" firstAttribute="top" secondItem="Txj-k0-Zqy" secondAttribute="top" id="ABE-or-D7E"/>
+                                                <constraint firstItem="cUF-XN-IMy" firstAttribute="top" secondItem="cP2-Tg-NLi" secondAttribute="bottom" constant="1.5" id="J9O-i1-ga4"/>
+                                                <constraint firstItem="bOf-D0-Bq6" firstAttribute="centerY" secondItem="IHc-9f-pxr" secondAttribute="centerY" id="TO0-0y-iTA"/>
+                                                <constraint firstItem="cP2-Tg-NLi" firstAttribute="leading" secondItem="Txj-k0-Zqy" secondAttribute="trailing" constant="10" id="You-Kh-0dn"/>
+                                                <constraint firstItem="Txj-k0-Zqy" firstAttribute="top" secondItem="IHc-9f-pxr" secondAttribute="topMargin" constant="20" id="cra-Zg-oeD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bOf-D0-Bq6" secondAttribute="trailing" constant="20" id="hnb-89-dYa"/>
+                                                <constraint firstItem="Txj-k0-Zqy" firstAttribute="centerY" secondItem="IHc-9f-pxr" secondAttribute="centerY" id="npo-w7-o9l"/>
+                                                <constraint firstItem="zhG-qd-PAr" firstAttribute="centerY" secondItem="bOf-D0-Bq6" secondAttribute="centerY" id="nyy-8A-Bhb"/>
+                                                <constraint firstItem="bOf-D0-Bq6" firstAttribute="leading" secondItem="zhG-qd-PAr" secondAttribute="trailing" constant="10" id="qoy-cQ-SDk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Txj-k0-Zqy" secondAttribute="bottom" constant="20" id="ya8-0o-hSU"/>
+                                                <constraint firstItem="Txj-k0-Zqy" firstAttribute="leading" secondItem="IHc-9f-pxr" secondAttribute="leading" constant="20" id="zgM-Bv-kZ6"/>
+                                                <constraint firstItem="cUF-XN-IMy" firstAttribute="leading" secondItem="cP2-Tg-NLi" secondAttribute="leading" id="zq3-41-3tb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="d6d-lx-JTj" id="vjo-4F-HTl"/>
+                                    <outlet property="delegate" destination="d6d-lx-JTj" id="Pgh-Jv-oWw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -394,6 +463,11 @@
                             <constraint firstItem="UNF-uk-SV4" firstAttribute="leading" secondItem="ET3-0X-gI3" secondAttribute="leading" id="wTn-01-WLe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cartProducts" destination="UNF-uk-SV4" id="OA0-2n-X6j"/>
+                        <outlet property="totalPrice" destination="1Qv-AV-ht1" id="lu9-Wn-Buq"/>
+                        <outlet property="totalProducts" destination="3Yq-bh-Yfb" id="mWh-Lv-ojb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLG-QY-sSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,5 +477,6 @@
     <resources>
         <image name="Close" width="57" height="57"/>
         <image name="RightArrow" width="57" height="57"/>
+        <image name="Trash" width="57" height="57"/>
     </resources>
 </document>

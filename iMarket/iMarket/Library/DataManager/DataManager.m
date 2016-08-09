@@ -85,6 +85,10 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Cart_Product_Removed object:nil];
 }
 
+- (NSInteger) getProductsQuantityInCart {
+    return [self.cart getTotalProductsInCart];
+}
+
 - (NSInteger) getProductQuantityWithProductId:(NSString *) productId {
     return [self.cart getProductQuantityWithProductId:productId];
 }
