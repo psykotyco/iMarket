@@ -8,11 +8,11 @@
 
 #import "Constants.h"
 
-//// Segue
+// Segue
 
 NSString *const Segue_navigate_product_detail_from_products_list = @"ShowProductDetailFromProductsList";
 
-//// Product
+// Product
 
 int const Product_Number = 4;
 
@@ -28,6 +28,13 @@ NSString *const Product_Localizable_Names[] = {
     @"eggs_name",
     @"milk_name",
     @"beans_name"};
+
+NSString *const Product_Localizable_Package[] = {
+    @"peas_package",
+    @"eggs_package",
+    @"milk_package",
+    @"beans_package"
+};
 
 NSString *const Product_Localizable_Descriptions[] = {
     @"peas_description",
@@ -48,19 +55,28 @@ CGFloat const Product_Prices[] = {
     1.30,
     0.73};
 
-//// Currency
+// Currency
 
 NSString *const Default_Currency_Symbol = @"$";
-
-
-//Layout Titles
-
-NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key = @"productList_navigationBar_title";
-NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key = @"productDetail_navigationBar_title";
 
 // Images
 
 NSString *const Image_Right_Arrow = @"RightArrow";
+
+//// Localizable
+
+// Layout Titles
+
+NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key = @"productList_navigationBar_title";
+NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key = @"productDetail_navigationBar_title";
+
+// Outlets
+
+NSString *const ProductDetail_AddToCart_Button_Title_Localizable_Key = @"productDetail_addToCart_button_title";
+
+// Products
+
+NSString *const Product_Package_Conjunction_Localizable_Key = @"product_package_conjunction";
 
 @implementation Constants
 

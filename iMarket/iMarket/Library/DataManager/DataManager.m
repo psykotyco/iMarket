@@ -13,7 +13,7 @@
 
 @implementation DataManager
 
-#pragma mark - ---- LIFE CICLE
+#pragma mark - ---- LIFE CYCLE
 
 + (id) sharedInstance {
     static DataManager *sharedDataManager = nil;
@@ -39,6 +39,7 @@
         product.identifier = Product_Identifier[i];
         product.name = NSLocalizedString(Product_Localizable_Names[i], nil);
         product.price = Product_Prices[i];
+        product.package = NSLocalizedString(Product_Localizable_Package[i], nil);
         product.imageName = Product_Image_Name[i];
         product.completeDescription = NSLocalizedString(Product_Localizable_Descriptions[i], nil);
         

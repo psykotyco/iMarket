@@ -10,7 +10,7 @@
 
 @implementation UrlHelper
 
-#pragma mark - ---- LIFE CICLE
+#pragma mark - ---- LIFE CYCLE
 
 #pragma mark - ---- INTERNAL
 

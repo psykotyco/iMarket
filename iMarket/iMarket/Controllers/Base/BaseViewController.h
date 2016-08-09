@@ -11,4 +11,6 @@
 
 @interface BaseViewController : UIViewController <BaseViewControllerProtocol>
 
+@property (nonatomic, weak) IBOutlet UIView *loading;
+
 @end

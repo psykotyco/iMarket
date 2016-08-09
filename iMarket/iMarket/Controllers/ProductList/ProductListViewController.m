@@ -11,6 +11,7 @@
 #import "DataManager.h"
 #import "Constants.h"
 #import "Product.h"
+#import "Product+NSString.h"
 #import "ProductDetailViewController.h"
 
 static NSString *const kProductList_Cell_Reuse_Identifier = @"ProductListCellReuseIdentifier";
@@ -30,7 +31,7 @@ static int const kProductList_Cell_Price_Tag = 12;
 
 @implementation ProductListViewController
 
-#pragma mark - ---- LIFE CICLE
+#pragma mark - ---- LIFE CYCLE
 
 #pragma mark - ---- INTERNAL
 
@@ -47,9 +48,11 @@ static int const kProductList_Cell_Price_Tag = 12;
 }
 
 - (void) loadDatasAndRefreshInterface {
+    self.loading.hidden = NO;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.products = [[DataManager sharedInstance] getProducts];
         dispatch_async(dispatch_get_main_queue(), ^{
+            self.loading.hidden = YES;
             [self.productTable reloadData];
         });
     });
@@ -72,7 +75,7 @@ static int const kProductList_Cell_Price_Tag = 12;
     
     productImage.image = [UIImage imageNamed:product.imageName];
     productName.text = product.name;
-    productPrice.text = [NSString stringWithFormat:@"$%.2f", product.price];
+    productPrice.text = [product getFormattedStringPriceByPackage];
     
     return result;
 }

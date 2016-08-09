@@ -16,7 +16,7 @@
 
 @implementation ConnectionManager
 
-#pragma mark - ---- LIFE CICLE
+#pragma mark - ---- LIFE CYCLE
 
 - (void) launchUrl:(NSString *) url withCompletionBlock:(void(^)(NSData *data, NSURLResponse *response, NSError *error)) completion  {
     [self launchUrl:url withHeaders:nil withCompletionBlock:completion];

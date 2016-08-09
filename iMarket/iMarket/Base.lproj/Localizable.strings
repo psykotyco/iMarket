@@ -13,14 +13,24 @@
 "milk_name"  = "Milk";
 "beans_name" = "Beans";
 
+// Product Package
+"product_package_conjunction" = "per";
+"peas_package" = "bag";
+"eggs_package" = "dozen";
+"milk_package" = "bottle";
+"beans_package" = "can";
+
 // Product Description
 
 "peas_description"   = "";
 "eggs_description"   = "";
 "milk_description"   = "";
-"beans_description"  = "";
+"beans_description"  = "This item is canned refried beans made from a mixture of pinto beans and pink beans. This product is low-sodium, or 36-140 mg sodium per 1/2 cup serving, and is prepared without oil(s)/lard. This product is available in cases with six #10 cans. ";
 
 // Layout Title
 
 "productList_navigationBar_title" = "Market";
 "productDetail_navigationBar_title" = "Product Detail";
+
+// Outlets
+"productDetail_addToCart_button_title" = "Add to cart";

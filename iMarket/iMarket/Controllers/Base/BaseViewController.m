@@ -16,7 +16,7 @@
 
 @implementation BaseViewController
 
-#pragma mark - ---- LIFE CICLE
+#pragma mark - ---- LIFE CYCLE
 
 - (void)viewDidLoad {
     [super viewDidLoad];
