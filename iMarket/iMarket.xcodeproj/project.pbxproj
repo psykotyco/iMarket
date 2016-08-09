@@ -24,6 +24,7 @@
 		34A9F5BE1D59062600E649CA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5BD1D59062600E649CA /* BaseViewController.m */; };
 		34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5C21D59077600E649CA /* StyleSheet.m */; };
 		34D813621D5A098900C5D708 /* Product+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D813611D5A098900C5D708 /* Product+NSString.m */; };
+		34D813661D5A0F7A00C5D708 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D813651D5A0F7A00C5D708 /* Cart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		34A9F5C21D59077600E649CA /* StyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleSheet.m; sourceTree = "<group>"; };
 		34D813601D5A098900C5D708 /* Product+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+NSString.h"; sourceTree = "<group>"; };
 		34D813611D5A098900C5D708 /* Product+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+NSString.m"; sourceTree = "<group>"; };
+		34D813641D5A0F7A00C5D708 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		34D813651D5A0F7A00C5D708 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,7 @@
 		34A9F5AF1D58EE7D00E649CA /* Beans */ = {
 			isa = PBXGroup;
 			children = (
+				34D813631D5A0F4B00C5D708 /* Cart */,
 				34A9F5B01D58EF0100E649CA /* Product */,
 			);
 			path = Beans;
@@ -263,6 +267,15 @@
 				34D813611D5A098900C5D708 /* Product+NSString.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		34D813631D5A0F4B00C5D708 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				34D813641D5A0F7A00C5D708 /* Cart.h */,
+				34D813651D5A0F7A00C5D708 /* Cart.m */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D813661D5A0F7A00C5D708 /* Cart.m in Sources */,
 				34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */,
 				34408B671D586B0B006BC50E /* ProductListViewController.m in Sources */,
 				34A9F5BE1D59062600E649CA /* BaseViewController.m in Sources */,

@@ -27,6 +27,9 @@ extern NSString *const Image_Right_Arrow;
 // Currency
 extern NSString *const Default_Currency_Symbol;
 
+// Product Detail
+extern NSInteger const Default_Items_Number_Add_To_Cart;
+
 //// Localizable
 
 // Layout Titles

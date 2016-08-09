@@ -59,6 +59,9 @@ CGFloat const Product_Prices[] = {
 
 NSString *const Default_Currency_Symbol = @"$";
 
+// Product Detail
+NSInteger const Default_Items_Number_Add_To_Cart = 1;
+
 // Images
 
 NSString *const Image_Right_Arrow = @"RightArrow";

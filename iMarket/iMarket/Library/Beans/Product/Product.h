@@ -11,11 +11,11 @@
 
 @interface Product : NSObject
 
-@property (nonatomic, copy)     NSString *identifier;
-@property (nonatomic, copy)     NSString *name;
-@property (nonatomic, assign)   CGFloat price;
-@property (nonatomic, copy)     NSString *package;
-@property (nonatomic, copy)     NSString *imageName;
-@property (nonatomic, copy)     NSString *completeDescription;
+@property (nonatomic, copy)     NSString    *identifier;
+@property (nonatomic, copy)     NSString    *name;
+@property (nonatomic, assign)   CGFloat     price;
+@property (nonatomic, copy)     NSString    *package;
+@property (nonatomic, copy)     NSString    *imageName;
+@property (nonatomic, copy)     NSString    *completeDescription;
 
 @end

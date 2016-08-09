@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CGBase.h>
 
 @class Product;
+@class Cart;
 
 @interface DataManager : NSObject
 
@@ -20,5 +22,11 @@
 
 - (NSArray *) getProducts;
 - (Product *) getProductDetailWithId:(NSString *) productId;
+
+// Cart
+
+- (CGFloat) getCartTotalAmount;
+- (void) addProductToCart:(Product *) product quantity:(NSInteger) quantity;
+- (void) removeProductToCart:(Product *) product quantity:(NSInteger) quantity;
 
 @end

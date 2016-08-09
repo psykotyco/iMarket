@@ -10,6 +10,13 @@
 
 #import "Constants.h"
 #import "Product.h"
+#import "Cart.h"
+
+@interface DataManager ()
+
+@property (nonatomic, strong) Cart *cart;
+
+@end
 
 @implementation DataManager
 
@@ -19,7 +26,8 @@
     static DataManager *sharedDataManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedDataManager = [[self alloc] init];
+        sharedDataManager = [self new];
+        sharedDataManager.cart = [Cart new];
     });
     return  sharedDataManager;
 }
@@ -59,6 +67,20 @@
     }
     
     return nil;
+}
+
+#pragma mark - ---- ---- CART
+
+- (CGFloat) getCartTotalAmount {
+    return [self.cart totalAmount];
+}
+
+- (void) addProductToCart:(Product *) product quantity:(NSInteger) quantity {
+    [self.cart addProduct:product quantity:quantity];
+}
+
+- (void) removeProductToCart:(Product *) product quantity:(NSInteger) quantity {
+    [self.cart removeProduct:product quantity:quantity];
 }
 
 @end
