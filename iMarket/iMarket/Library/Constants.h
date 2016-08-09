@@ -14,6 +14,7 @@ extern NSString *const Segue_navigate_product_detail_from_products_list;
 
 // Products
 extern int const        Product_Number;
+extern NSString *const  Product_Identifier[];
 extern NSString *const  Product_Localizable_Names[];
 extern NSString *const  Product_Localizable_Descriptions[];
 extern NSString *const  Product_Image_Name[];
@@ -24,6 +25,7 @@ extern NSString *const Default_Currency_Symbol;
 
 // Layout Titles
 extern NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key;
+extern NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key;
 
 // Images
 extern NSString *const Image_Right_Arrow;

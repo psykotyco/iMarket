@@ -11,6 +11,7 @@
 #import "DataManager.h"
 #import "Constants.h"
 #import "Product.h"
+#import "ProductDetailViewController.h"
 
 static NSString *const kProductList_Cell_Reuse_Identifier = @"ProductListCellReuseIdentifier";
 static CGFloat const kProductList_Cell_Height = 100.0f;
@@ -23,6 +24,7 @@ static int const kProductList_Cell_Price_Tag = 12;
 @property (nonatomic, weak) IBOutlet UITableView *productTable;
 
 @property (nonatomic, strong) NSArray *products;
+@property (nonatomic, weak) Product *selectedProduct;
 
 @end
 
@@ -30,24 +32,27 @@ static int const kProductList_Cell_Price_Tag = 12;
 
 #pragma mark - ---- LIFE CICLE
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self loadProductsAndRefreshInterface];
-}
-
 #pragma mark - ---- INTERNAL
 
-- (void) loadProductsAndRefreshInterface {
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ProductDetailViewController *productDetail = segue.destinationViewController;
+    productDetail.productId = self.selectedProduct.identifier;
+}
+
+#pragma mark - ---- ---- OVERRIDE
+
+- (void) customizeNavigationBar {
+    [super customizeNavigationBar];
+    [self setTitle:NSLocalizedString(Layout_ProductList_NavigationBar_Title_Localizable_Key, nil)];
+}
+
+- (void) loadDatasAndRefreshInterface {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.products = [[DataManager sharedInstance] getProducts];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.productTable reloadData];
         });
     });
-}
-
-- (void) customizeNavigationBar {
-    [self setTitle:NSLocalizedString(Layout_ProductList_NavigationBar_Title_Localizable_Key, nil)];
 }
 
 #pragma mark - ---- ---- UITableViewDataSource
@@ -79,6 +84,7 @@ static int const kProductList_Cell_Price_Tag = 12;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedProduct = [self.products objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:Segue_navigate_product_detail_from_products_list sender:self];
 }
 

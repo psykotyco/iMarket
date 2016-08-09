@@ -22,4 +22,5 @@
 
 // Layout Title
 
-"productList_navigationBar_title" = "Shop";
+"productList_navigationBar_title" = "Market";
+"productDetail_navigationBar_title" = "Product Detail";

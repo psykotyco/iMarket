@@ -15,6 +15,14 @@ NSString *const Segue_navigate_product_detail_from_products_list = @"ShowProduct
 //// Product
 
 int const Product_Number = 4;
+
+NSString *const  Product_Identifier[] = {
+    @"1",
+    @"2",
+    @"3",
+    @"4"
+};
+
 NSString *const Product_Localizable_Names[] = {
     @"peas_name",
     @"eggs_name",
@@ -48,6 +56,7 @@ NSString *const Default_Currency_Symbol = @"$";
 //Layout Titles
 
 NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key = @"productList_navigationBar_title";
+NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key = @"productDetail_navigationBar_title";
 
 // Images
 

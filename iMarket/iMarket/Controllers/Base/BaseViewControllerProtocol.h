@@ -12,5 +12,6 @@
 
 - (void) initalizeInterface;
 - (void) customizeNavigationBar;
+- (void) loadDatasAndRefreshInterface;
 
 @end

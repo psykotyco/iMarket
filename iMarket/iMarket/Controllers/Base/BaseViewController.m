@@ -28,12 +28,15 @@
 #pragma mark - ---- PUBLIC
 
 - (void) initalizeInterface {
-    [self.navigationController.navigationBar setBackgroundColor:[StyleSheet getMainColor]];
     [self customizeNavigationBar];
+    [self loadDatasAndRefreshInterface];
 }
 
 - (void) customizeNavigationBar {
+    [self.navigationController.navigationBar setBackgroundColor:[StyleSheet getMainColor]];
+}
 
+- (void) loadDatasAndRefreshInterface {
 }
 
 @end

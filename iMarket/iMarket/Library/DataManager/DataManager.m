@@ -28,12 +28,15 @@
 
 #pragma mark - ---- PUBLIC
 
+#pragma mark - ---- ---- PRODUCTS
+
 - (NSArray *) getProducts {
     NSMutableArray *result = [NSMutableArray new];
     
     for (int i = 0; i < Product_Number; i++) {
         Product *product = [Product new];
         
+        product.identifier = Product_Identifier[i];
         product.name = NSLocalizedString(Product_Localizable_Names[i], nil);
         product.price = Product_Prices[i];
         product.imageName = Product_Image_Name[i];
@@ -43,6 +46,18 @@
     }
     
     return [NSArray arrayWithArray:result];
+}
+
+- (Product *) getProductDetailWithId:(NSString *) productId {
+    NSArray *products = [self getProducts];
+    
+    for (Product *product in products) {
+        if ([product.identifier isEqualToString:productId]) {
+            return product;
+        }
+    }
+    
+    return nil;
 }
 
 @end

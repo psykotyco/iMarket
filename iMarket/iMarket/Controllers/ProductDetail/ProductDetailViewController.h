@@ -10,4 +10,6 @@
 
 @interface ProductDetailViewController : BaseViewController
 
+@property (nonatomic, copy) NSString *productId;
+
 @end
