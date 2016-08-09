@@ -11,6 +11,7 @@
 #import "DataManager.h"
 #import "Constants.h"
 #import "Product.h"
+#import "Product+NSString.h"
 
 @interface ProductDetailViewController ()
 
@@ -35,7 +36,7 @@
 - (void) displayProduct:(Product *) product {
     self.productImage.image = [UIImage imageNamed:product.imageName];
     self.productName.text = product.name;
-    self.productPrice.text = [NSString stringWithFormat:@"$%.2f", product.price];
+    self.productPrice.text = [product getFormattedStringPriceByPackage];
     self.productDescription.text = product.completeDescription;
 }
 

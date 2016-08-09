@@ -66,6 +66,15 @@ NSInteger const Default_Items_Number_Add_To_Cart = 1;
 
 NSString *const Image_Right_Arrow = @"RightArrow";
 
+// Notifications
+
+NSString *const Notification_Cart_Product_Added = @"Cart_Product_Added";
+NSString *const Notification_Cart_Product_Removed = @"Cart_Product_Removed";
+
+// Storyboard
+
+NSString *const Storyboard_Main = @"Main";
+
 //// Localizable
 
 // Layout Titles

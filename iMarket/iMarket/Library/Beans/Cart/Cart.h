@@ -13,10 +13,12 @@
 
 @interface Cart : NSObject
 
-@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSArray *products;
 @property (nonatomic, readonly) CGFloat totalAmount;
 
 - (void) addProduct:(Product *) product quantity:(NSInteger) quantity;
 - (void) removeProduct:(Product *) product quantity:(NSInteger) quantity;
+- (NSInteger) getProductQuantityWithProductId:(NSString *) productId;
+- (Product *) getProductInCartWithProductId:(NSString *) productId;
 
 @end

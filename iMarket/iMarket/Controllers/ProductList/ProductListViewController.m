@@ -11,8 +11,9 @@
 #import "DataManager.h"
 #import "Constants.h"
 #import "Product.h"
-#import "Product+NSString.h"
 #import "ProductDetailViewController.h"
+#import "Product+NSString.h"
+#import "UIView+Utilities.h"
 
 static NSString *const kProductList_Cell_Reuse_Identifier = @"ProductListCellReuseIdentifier";
 static CGFloat const kProductList_Cell_Height = 100.0f;
@@ -41,6 +42,10 @@ static int const kProductList_Cell_Price_Tag = 12;
 }
 
 #pragma mark - ---- ---- OVERRIDE
+
+- (void) initalizeInterface {
+    [super initalizeInterface];
+}
 
 - (void) customizeNavigationBar {
     [super customizeNavigationBar];

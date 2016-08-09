@@ -26,6 +26,8 @@
 // Cart
 
 - (CGFloat) getCartTotalAmount;
+- (NSInteger) getProductQuantityWithProductId:(NSString *) productId;
+- (NSArray *) getProductsInCart;
 - (void) addProductToCart:(Product *) product quantity:(NSInteger) quantity;
 - (void) removeProductToCart:(Product *) product quantity:(NSInteger) quantity;
 

@@ -77,10 +77,20 @@
 
 - (void) addProductToCart:(Product *) product quantity:(NSInteger) quantity {
     [self.cart addProduct:product quantity:quantity];
+    [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Cart_Product_Added object:nil];
 }
 
 - (void) removeProductToCart:(Product *) product quantity:(NSInteger) quantity {
     [self.cart removeProduct:product quantity:quantity];
+        [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Cart_Product_Removed object:nil];
+}
+
+- (NSInteger) getProductQuantityWithProductId:(NSString *) productId {
+    return [self.cart getProductQuantityWithProductId:productId];
+}
+
+- (NSArray *) getProductsInCart {
+    return [self.cart products];
 }
 
 @end

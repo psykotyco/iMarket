@@ -25,6 +25,10 @@
 		34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F5C21D59077600E649CA /* StyleSheet.m */; };
 		34D813621D5A098900C5D708 /* Product+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D813611D5A098900C5D708 /* Product+NSString.m */; };
 		34D813661D5A0F7A00C5D708 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D813651D5A0F7A00C5D708 /* Cart.m */; };
+		34D8136F1D5A4F3900C5D708 /* BottomCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D8136E1D5A4F3900C5D708 /* BottomCartView.m */; };
+		34D813711D5A4F4400C5D708 /* BottomCartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D813701D5A4F4400C5D708 /* BottomCartView.xib */; };
+		34D813741D5A555D00C5D708 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D813731D5A555D00C5D708 /* UIView+Utilities.m */; };
+		34D813781D5A60B100C5D708 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D813771D5A60B100C5D708 /* CartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,13 @@
 		34D813611D5A098900C5D708 /* Product+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+NSString.m"; sourceTree = "<group>"; };
 		34D813641D5A0F7A00C5D708 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
 		34D813651D5A0F7A00C5D708 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		34D8136D1D5A4F3900C5D708 /* BottomCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomCartView.h; sourceTree = "<group>"; };
+		34D8136E1D5A4F3900C5D708 /* BottomCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomCartView.m; sourceTree = "<group>"; };
+		34D813701D5A4F4400C5D708 /* BottomCartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomCartView.xib; sourceTree = "<group>"; };
+		34D813721D5A555D00C5D708 /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
+		34D813731D5A555D00C5D708 /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utilities.m"; sourceTree = "<group>"; };
+		34D813761D5A60B100C5D708 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		34D813771D5A60B100C5D708 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +127,7 @@
 			children = (
 				34A9F59A1D58EDCC00E649CA /* Library */,
 				34408B631D586AA9006BC50E /* Controllers */,
+				34D8136B1D5A4EFB00C5D708 /* Views */,
 				34408B411D586A98006BC50E /* AppDelegate.h */,
 				34408B421D586A98006BC50E /* AppDelegate.m */,
 				34408B471D586A98006BC50E /* Main.storyboard */,
@@ -148,6 +160,7 @@
 		34408B631D586AA9006BC50E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34D813751D5A608F00C5D708 /* Cart */,
 				34A9F5BB1D59060600E649CA /* Base */,
 				34A9F5AB1D58EE3C00E649CA /* ProductDetail */,
 				34408B641D586AD1006BC50E /* ProductList */,
@@ -265,6 +278,8 @@
 			children = (
 				34D813601D5A098900C5D708 /* Product+NSString.h */,
 				34D813611D5A098900C5D708 /* Product+NSString.m */,
+				34D813721D5A555D00C5D708 /* UIView+Utilities.h */,
+				34D813731D5A555D00C5D708 /* UIView+Utilities.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -274,6 +289,33 @@
 			children = (
 				34D813641D5A0F7A00C5D708 /* Cart.h */,
 				34D813651D5A0F7A00C5D708 /* Cart.m */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		34D8136B1D5A4EFB00C5D708 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34D8136C1D5A4F1800C5D708 /* BottomCart */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34D8136C1D5A4F1800C5D708 /* BottomCart */ = {
+			isa = PBXGroup;
+			children = (
+				34D8136D1D5A4F3900C5D708 /* BottomCartView.h */,
+				34D8136E1D5A4F3900C5D708 /* BottomCartView.m */,
+				34D813701D5A4F4400C5D708 /* BottomCartView.xib */,
+			);
+			path = BottomCart;
+			sourceTree = "<group>";
+		};
+		34D813751D5A608F00C5D708 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				34D813761D5A60B100C5D708 /* CartViewController.h */,
+				34D813771D5A60B100C5D708 /* CartViewController.m */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -360,6 +402,7 @@
 			files = (
 				34408B4E1D586A98006BC50E /* LaunchScreen.storyboard in Resources */,
 				34A9F5B81D58F6D300E649CA /* Localizable.strings in Resources */,
+				34D813711D5A4F4400C5D708 /* BottomCartView.xib in Resources */,
 				34408B4B1D586A98006BC50E /* Assets.xcassets in Resources */,
 				34408B491D586A98006BC50E /* Main.storyboard in Resources */,
 			);
@@ -381,10 +424,13 @@
 			files = (
 				34D813661D5A0F7A00C5D708 /* Cart.m in Sources */,
 				34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */,
+				34D8136F1D5A4F3900C5D708 /* BottomCartView.m in Sources */,
 				34408B671D586B0B006BC50E /* ProductListViewController.m in Sources */,
 				34A9F5BE1D59062600E649CA /* BaseViewController.m in Sources */,
 				34A9F5A81D58EDCC00E649CA /* DataManager.m in Sources */,
 				34A9F5AA1D58EDCC00E649CA /* UrlHelper.m in Sources */,
+				34D813741D5A555D00C5D708 /* UIView+Utilities.m in Sources */,
+				34D813781D5A60B100C5D708 /* CartViewController.m in Sources */,
 				34D813621D5A098900C5D708 /* Product+NSString.m in Sources */,
 				34A9F5B31D58EF2200E649CA /* Product.m in Sources */,
 				34A9F5AE1D58EE6100E649CA /* ProductDetailViewController.m in Sources */,

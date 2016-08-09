@@ -30,6 +30,13 @@ extern NSString *const Default_Currency_Symbol;
 // Product Detail
 extern NSInteger const Default_Items_Number_Add_To_Cart;
 
+// Notifications
+extern NSString *const Notification_Cart_Product_Added;
+extern NSString *const Notification_Cart_Product_Removed;
+
+// Storyboard
+extern NSString *const Storyboard_Main;
+
 //// Localizable
 
 // Layout Titles
