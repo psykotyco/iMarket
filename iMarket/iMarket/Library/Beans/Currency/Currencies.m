@@ -8,10 +8,9 @@
 
 #import "Currencies.h"
 
+#import "Constants.h"
 #import "Currency.h"
 
-static NSString *const kCurrencyListValues_Key = @"quotes";
-static NSString *const kCurrencySource_Key = @"source";
 
 @implementation Currencies
 

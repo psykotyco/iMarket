@@ -8,6 +8,14 @@
 
 #import <XCTest/XCTest.h>
 
+#import "DataManager.h"
+#import "Constants.h"
+#import "Currencies.h"
+#import "Currency.h"
+#import "Product.h"
+
+const NSTimeInterval kNetwork_Tests_Timeout = 20;
+
 @interface iMarketTests : XCTestCase
 
 @end
@@ -16,24 +24,45 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testGetCurrencies_Ok {
+    __block XCTestExpectation *getCurrenciesOkExpectation = [self expectationWithDescription:@"get server currencies ok"];
+    [[DataManager sharedInstance] getCurrenciesWithCompletionBlock:^(Currencies *currencies) {
+        XCTAssert(currencies.currencies.count > 0, "Currencies are empty!!!!");
+        [getCurrenciesOkExpectation fulfill];
+    }];
+    
+    [self waitForExpectationsWithTimeout:kNetwork_Tests_Timeout handler:^(NSError * _Nullable error) {
+        NSLog(@"%@", error.description);
+    }];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testGetProductsNumber_Ok {
+    NSArray *products = [[DataManager sharedInstance] getProducts];
+    XCTAssert(products.count == 4, "The prodcuct number has to be 4!!!!");
+}
+
+- (void)testProductsDetail_Name_Ok {
+    NSArray *products = [[DataManager sharedInstance] getProducts];
+    
+    for (Product *product in products) {
+        Product *productDetail = [[DataManager sharedInstance] getProductDetailWithId:Product_Identifier[[products indexOfObject:product]]];
+        XCTAssert([product.name isEqualToString:productDetail.name], "Product Detail Name: %@ Is not correct", productDetail.name);
+    }
+}
+
+- (void)testProductsDetail_Identifier_Ok {
+    NSArray *products = [[DataManager sharedInstance] getProducts];
+    
+    for (Product *product in products) {
+        Product *productDetail = [[DataManager sharedInstance] getProductDetailWithId:Product_Identifier[[products indexOfObject:product]]];
+        XCTAssert([product.identifier isEqualToString:productDetail.identifier], "Product Detail identifier: %@ Is not correct", productDetail.identifier);
+    }
 }
 
 @end

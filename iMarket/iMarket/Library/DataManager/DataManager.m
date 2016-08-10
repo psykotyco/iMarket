@@ -108,11 +108,8 @@
     
     [connectionManager launchUrl:Currency_Server_Endpoint withHeaders:nil queryParams:queryParams withCompletionBlock:^(NSData *data, NSURLResponse *response, NSError *error) {
         
-        
         NSError *jsonParsingError = nil;
-        NSDictionary *parsedResponse = [NSJSONSerialization JSONObjectWithData:data
-                                                                  options:0 error:&jsonParsingError];
-        
+        NSDictionary *parsedResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonParsingError];
         block([[Currencies alloc] initWithDictionary:parsedResponse]);
     }];
 }

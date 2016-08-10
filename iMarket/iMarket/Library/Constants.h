@@ -10,11 +10,9 @@
 #import <CoreGraphics/CGBase.h>
 
 // Api Keys
-
 extern NSString *const Currency_Api_Key;
 
 // Network
-
 extern NSString *const Currency_Server_Endpoint;
 extern NSString *const Currency_Api_Key_Param_Key;
 
@@ -64,6 +62,10 @@ extern NSString *const Product_Peas_Package_Localizable_Key;
 extern NSString *const Product_Eggs_Package_Localizable_Key;
 extern NSString *const Product_Milk_Package_Localizable_Key;
 extern NSString *const Product_Beans_Package_Localizable_Key;
+
+// Currencies
+extern NSString *const kCurrencyListValues_Key;
+extern NSString *const kCurrencySource_Key;
 
 @interface Constants : NSObject
 

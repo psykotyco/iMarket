@@ -9,20 +9,16 @@
 #import "Constants.h"
 
 // Api Keys
-
 NSString *const Currency_Api_Key = @"f52c80c63abce05ad21ad96f8a23e726";
 
 // Network
-
 NSString *const Currency_Server_Endpoint = @"http://apilayer.net/api/live";
 NSString *const Currency_Api_Key_Param_Key = @"access_key";
 
 // Segue
-
 NSString *const Segue_navigate_product_detail_from_products_list = @"ShowProductDetailFromProductsList";
 
 // Product
-
 int const Product_Number = 4;
 
 NSString *const  Product_Identifier[] = {
@@ -65,43 +61,40 @@ CGFloat const Product_Prices[] = {
     0.73};
 
 // Currency
-
 NSString *const Default_Currency_Symbol = @"$";
 
 // Product Detail
 NSInteger const Default_Items_Number_Add_Remove_To_Cart = 1;
 
 // Images
-
 NSString *const Image_Right_Arrow = @"RightArrow";
 
 // Notifications
-
 NSString *const Notification_Cart_Product_Added = @"Cart_Product_Added";
 NSString *const Notification_Cart_Product_Removed = @"Cart_Product_Removed";
 
 // Storyboard
-
 NSString *const Storyboard_Main = @"Main";
 
 //// Localizable
 
 // Layout Titles
-
 NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key = @"productList_navigationBar_title";
 NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key = @"productDetail_navigationBar_title";
 NSString *const Layout_CartDetail_Modal_Title_Localizable_Key = @"cartDetail_modal_title";
 
 // Outlets
-
 NSString *const ProductDetail_AddToCart_Button_Title_Localizable_Key = @"productDetail_addToCart_button_title";
 NSString *const CartDetail_ChangeCurrency_Button_Title_Show_Localizable_Key = @"cartDetail_changeCurrency_button_title_show";
 NSString *const CartDetail_ChangeCurrency_Button_Title_Hide_Localizable_Key = @"cartDetail_changeCurrency_button_title_hide";
 
 
 // Products
-
 NSString *const Product_Package_Conjunction_Localizable_Key = @"product_package_conjunction";
+
+// Currencies
+NSString *const kCurrencyListValues_Key = @"quotes";
+NSString *const kCurrencySource_Key = @"source";
 
 @implementation Constants
 
