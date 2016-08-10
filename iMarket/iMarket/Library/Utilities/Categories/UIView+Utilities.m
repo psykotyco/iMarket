@@ -18,6 +18,7 @@
 
 - (void) addFullSizeSubview:(UIView *)view {
     view.translatesAutoresizingMaskIntoConstraints = NO;
+    self.layoutMargins = UIEdgeInsetsMake(0,0,0,0);
     [self addSubview:view];
     
     NSDictionary *viewsDictionary = @{@"childView":view};

@@ -12,6 +12,7 @@
 #import "Product.h"
 #import "Product+NSString.h"
 #import "Constants.h"
+#import "StyleSheet.h"
 
 static NSString *const kProductCart_Cell_Reuse_Identifier = @"ProductCartCellReuseIdentifier";
 static CGFloat const kProductList_Cell_Height = 100.0f;
@@ -23,18 +24,19 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 
 @interface CartViewController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, weak) IBOutlet UIView *headerContainer;
 @property (nonatomic, weak) IBOutlet UILabel *layoutTitle;
 @property (nonatomic, weak) IBOutlet UITableView *cartProducts;
 @property (nonatomic, weak) IBOutlet UILabel *totalPrice;
 @property (nonatomic, weak) IBOutlet UILabel *totalProducts;
-@property (nonatomic, weak) IBOutlet UIButton *changeCurrency;
+@property (nonatomic, weak) IBOutlet UIButton *showATotalAmountOtherCurrencies;
 
 @property (nonatomic, strong) NSArray *products;
 @property (nonatomic, assign) NSInteger numberProductsInCart;
 @property (nonatomic, assign) CGFloat totalAmount;
 
 - (IBAction)closePressed:(id)sender;
-- (IBAction)changeCurrencyPressed:(id)sender;
+- (IBAction)showATotalAmountOtherCurrenciesPressed:(id)sender;
 
 @end
 
@@ -47,20 +49,23 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 #pragma mark - ---- ---- OVERRIDE
 
 - (void) initalizeInterface {
+    [self.headerContainer setBackgroundColor:[StyleSheet getMainColor]];
+    self.layoutTitle.text = NSLocalizedString(Layout_CartDetail_Modal_Title_Localizable_Key, nil);
+    [self.showATotalAmountOtherCurrencies setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Localizable_Key, nil) forState:UIControlStateNormal];
     [self loadDatasAndRefreshInterface];
 }
 
 - (void) loadDatasAndRefreshInterface {
+    self.loading.hidden = NO;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         self.products = [[DataManager sharedInstance] getProductsInCart];
         self.totalAmount = [[DataManager sharedInstance] getCartTotalAmount];
         self.numberProductsInCart = [[DataManager sharedInstance] getProductsQuantityInCart];
         dispatch_async(dispatch_get_main_queue(), ^{
+            self.loading.hidden = YES;
             if (self.totalAmount > 0) {
-                self.layoutTitle.text = NSLocalizedString(Layout_CartDetail_Modal_Title_Localizable_Key, nil);
                 self.totalPrice.text = [NSString stringWithFormat:@"%@ %.2f", Default_Currency_Symbol, self.totalAmount];
                 self.totalProducts.text = [NSString stringWithFormat:@"%li", self.numberProductsInCart];
-                [self.changeCurrency setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Localizable_Key, nil) forState:UIControlStateNormal];
                 [self.cartProducts reloadData];
             } else {
                 [self closePressed:nil];
@@ -109,7 +114,7 @@ static int const kProductCart_Cell_Remove_Tag = 14;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)changeCurrencyPressed:(id)sender {
+- (IBAction)showATotalAmountOtherCurrenciesPressed:(id)sender {
 
 }
 
