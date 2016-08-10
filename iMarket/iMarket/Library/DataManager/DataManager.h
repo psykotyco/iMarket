@@ -10,7 +10,7 @@
 #import <CoreGraphics/CGBase.h>
 
 @class Product;
-@class Cart;
+@class Currencies;
 
 @interface DataManager : NSObject
 
@@ -31,5 +31,9 @@
 - (NSArray *) getProductsInCart;
 - (void) addProductToCart:(Product *) product quantity:(NSInteger) quantity;
 - (void) removeProductToCart:(Product *) product quantity:(NSInteger) quantity;
+
+// Currencies
+
+- (void) getCurrenciesWithCompletionBlock:(void (^)(Currencies *currencies)) block;
 
 @end

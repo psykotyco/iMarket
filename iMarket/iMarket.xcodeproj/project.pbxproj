@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344010FC1D5B881F006F9012 /* Currencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 344010FB1D5B881F006F9012 /* Currencies.m */; };
+		344010FF1D5B88E0006F9012 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = 344010FE1D5B88E0006F9012 /* Currency.m */; };
 		34408B401D586A98006BC50E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34408B3F1D586A98006BC50E /* main.m */; };
 		34408B431D586A98006BC50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34408B421D586A98006BC50E /* AppDelegate.m */; };
 		34408B491D586A98006BC50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34408B471D586A98006BC50E /* Main.storyboard */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		344010FA1D5B881F006F9012 /* Currencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currencies.h; sourceTree = "<group>"; };
+		344010FB1D5B881F006F9012 /* Currencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currencies.m; sourceTree = "<group>"; };
+		344010FD1D5B88E0006F9012 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		344010FE1D5B88E0006F9012 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
 		34408B3B1D586A98006BC50E /* iMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34408B3F1D586A98006BC50E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34408B411D586A98006BC50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +110,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		344010F91D5B87DC006F9012 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				344010FA1D5B881F006F9012 /* Currencies.h */,
+				344010FB1D5B881F006F9012 /* Currencies.m */,
+				344010FD1D5B88E0006F9012 /* Currency.h */,
+				344010FE1D5B88E0006F9012 /* Currency.m */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
 		34408B321D586A98006BC50E = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +256,7 @@
 		34A9F5AF1D58EE7D00E649CA /* Beans */ = {
 			isa = PBXGroup;
 			children = (
+				344010F91D5B87DC006F9012 /* Currency */,
 				34D813631D5A0F4B00C5D708 /* Cart */,
 				34A9F5B01D58EF0100E649CA /* Product */,
 			);
@@ -424,6 +442,7 @@
 			files = (
 				34D813661D5A0F7A00C5D708 /* Cart.m in Sources */,
 				34A9F5C31D59077600E649CA /* StyleSheet.m in Sources */,
+				344010FF1D5B88E0006F9012 /* Currency.m in Sources */,
 				34D8136F1D5A4F3900C5D708 /* BottomCartView.m in Sources */,
 				34408B671D586B0B006BC50E /* ProductListViewController.m in Sources */,
 				34A9F5BE1D59062600E649CA /* BaseViewController.m in Sources */,
@@ -431,6 +450,7 @@
 				34A9F5AA1D58EDCC00E649CA /* UrlHelper.m in Sources */,
 				34D813741D5A555D00C5D708 /* UIView+Utilities.m in Sources */,
 				34D813781D5A60B100C5D708 /* CartViewController.m in Sources */,
+				344010FC1D5B881F006F9012 /* Currencies.m in Sources */,
 				34D813621D5A098900C5D708 /* Product+NSString.m in Sources */,
 				34A9F5B31D58EF2200E649CA /* Product.m in Sources */,
 				34A9F5AE1D58EE6100E649CA /* ProductDetailViewController.m in Sources */,

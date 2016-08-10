@@ -8,6 +8,15 @@
 
 #import "Constants.h"
 
+// Api Keys
+
+NSString *const Currency_Api_Key = @"f52c80c63abce05ad21ad96f8a23e726";
+
+// Network
+
+NSString *const Currency_Server_Endpoint = @"http://apilayer.net/api/live";
+NSString *const Currency_Api_Key_Param_Key = @"access_key";
+
 // Segue
 
 NSString *const Segue_navigate_product_detail_from_products_list = @"ShowProductDetailFromProductsList";
@@ -86,7 +95,9 @@ NSString *const Layout_CartDetail_Modal_Title_Localizable_Key = @"cartDetail_mod
 // Outlets
 
 NSString *const ProductDetail_AddToCart_Button_Title_Localizable_Key = @"productDetail_addToCart_button_title";
-NSString *const CartDetail_ChangeCurrency_Button_Title_Localizable_Key = @"cartDetail_changeCurrency_button_title";
+NSString *const CartDetail_ChangeCurrency_Button_Title_Show_Localizable_Key = @"cartDetail_changeCurrency_button_title_show";
+NSString *const CartDetail_ChangeCurrency_Button_Title_Hide_Localizable_Key = @"cartDetail_changeCurrency_button_title_hide";
+
 
 // Products
 

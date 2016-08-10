@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGBase.h>
 
+// Api Keys
+
+extern NSString *const Currency_Api_Key;
+
+// Network
+
+extern NSString *const Currency_Server_Endpoint;
+extern NSString *const Currency_Api_Key_Param_Key;
+
 // Segue
 extern NSString *const Segue_navigate_product_detail_from_products_list;
 
@@ -46,7 +55,8 @@ extern NSString *const Layout_CartDetail_Modal_Title_Localizable_Key;
 
 // Outlets
 extern NSString *const ProductDetail_AddToCart_Button_Title_Localizable_Key;
-extern NSString *const CartDetail_ChangeCurrency_Button_Title_Localizable_Key;
+extern NSString *const CartDetail_ChangeCurrency_Button_Title_Show_Localizable_Key;
+extern NSString *const CartDetail_ChangeCurrency_Button_Title_Hide_Localizable_Key;
 
 // Products
 extern NSString *const Product_Package_Conjunction_Localizable_Key;

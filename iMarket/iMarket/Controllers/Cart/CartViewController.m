@@ -13,6 +13,8 @@
 #import "Product+NSString.h"
 #import "Constants.h"
 #import "StyleSheet.h"
+#import "Currencies.h"
+#import "Currency.h"
 
 static NSString *const kProductCart_Cell_Reuse_Identifier = @"ProductCartCellReuseIdentifier";
 static CGFloat const kProductList_Cell_Height = 100.0f;
@@ -22,7 +24,7 @@ static int const kProductCart_Cell_Price_Tag = 12;
 static int const kProductCart_Cell_Quantity_Tag = 13;
 static int const kProductCart_Cell_Remove_Tag = 14;
 
-@interface CartViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CartViewController () <UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *headerContainer;
 @property (nonatomic, weak) IBOutlet UILabel *layoutTitle;
@@ -34,6 +36,9 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 @property (nonatomic, strong) NSArray *products;
 @property (nonatomic, assign) NSInteger numberProductsInCart;
 @property (nonatomic, assign) CGFloat totalAmount;
+
+@property (nonatomic, strong) Currencies *currencies;
+@property (nonatomic, strong) UIPickerView *pickerView;
 
 - (IBAction)closePressed:(id)sender;
 - (IBAction)showATotalAmountOtherCurrenciesPressed:(id)sender;
@@ -51,7 +56,7 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 - (void) initalizeInterface {
     [self.headerContainer setBackgroundColor:[StyleSheet getMainColor]];
     self.layoutTitle.text = NSLocalizedString(Layout_CartDetail_Modal_Title_Localizable_Key, nil);
-    [self.showATotalAmountOtherCurrencies setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Localizable_Key, nil) forState:UIControlStateNormal];
+    [self.showATotalAmountOtherCurrencies setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Show_Localizable_Key, nil) forState:UIControlStateNormal];
     [self loadDatasAndRefreshInterface];
 }
 
@@ -107,6 +112,22 @@ static int const kProductCart_Cell_Remove_Tag = 14;
     return kProductList_Cell_Height;
 }
 
+#pragma mark - ---- ---- UIPickerViewDataSource
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *) pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return self.currencies.currencies.count;
+}
+
+#pragma mark - ---- ---- UIPickerViewDelegate
+
+- (NSString*)pickerView:(UIPickerView*)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    Currency *currency = [self.currencies.currencies objectAtIndex:row];
+    return [NSString stringWithFormat:@"%@ %.2f", currency.name, self.totalAmount * currency.value.floatValue];
+}
 
 #pragma mark - ---- ---- IBAction
 
@@ -115,7 +136,24 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 }
 
 - (IBAction)showATotalAmountOtherCurrenciesPressed:(id)sender {
-
+    if (self.pickerView) {
+        [self.showATotalAmountOtherCurrencies setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Show_Localizable_Key, nil) forState:UIControlStateNormal];
+        [self.pickerView removeFromSuperview];
+        self.pickerView = nil;
+    } else {
+        self.loading.hidden = NO;
+        [[DataManager sharedInstance] getCurrenciesWithCompletionBlock:^(Currencies *currencies) {
+            self.loading.hidden = YES;
+            self.currencies = currencies;
+            
+            self.pickerView = [[UIPickerView alloc] initWithFrame:self.cartProducts.frame];
+            [self.pickerView setBackgroundColor:[UIColor whiteColor]];
+            [self.pickerView setDataSource:self];
+            [self.pickerView setDelegate:self];
+            [self.view addSubview:self.pickerView];
+            [self.showATotalAmountOtherCurrencies setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Hide_Localizable_Key, nil) forState:UIControlStateNormal];
+        }];
+    }
 }
 
 - (void)removeProductSelected:(UIButton *)sender {
@@ -129,7 +167,6 @@ static int const kProductCart_Cell_Remove_Tag = 14;
         });
     });
 }
-
 
 
 #pragma mark - ---- PUBLIC

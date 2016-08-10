@@ -36,4 +36,5 @@
 // Outlets
 
 "productDetail_addToCart_button_title" = "Add to cart";
-"cartDetail_changeCurrency_button_title" = "Change currency";
+"cartDetail_changeCurrency_button_title_show" = "Show other currencies";
+"cartDetail_changeCurrency_button_title_hide" = "Hide other currencies";

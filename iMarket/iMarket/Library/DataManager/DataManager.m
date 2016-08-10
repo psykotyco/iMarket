@@ -11,6 +11,8 @@
 #import "Constants.h"
 #import "Product.h"
 #import "Cart.h"
+#import "Currencies.h"
+#import "ConnectionManager.h"
 
 @interface DataManager ()
 
@@ -95,6 +97,24 @@
 
 - (NSArray *) getProductsInCart {
     return [self.cart products];
+}
+
+#pragma mark - ---- ---- CURRENCIES
+
+- (void) getCurrenciesWithCompletionBlock:(void (^)(Currencies *currencies)) block {
+    ConnectionManager *connectionManager = [[ConnectionManager alloc] init];
+    
+    NSDictionary *queryParams = @{Currency_Api_Key_Param_Key:Currency_Api_Key};
+    
+    [connectionManager launchUrl:Currency_Server_Endpoint withHeaders:nil queryParams:queryParams withCompletionBlock:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        
+        NSError *jsonParsingError = nil;
+        NSDictionary *parsedResponse = [NSJSONSerialization JSONObjectWithData:data
+                                                                  options:0 error:&jsonParsingError];
+        
+        block([[Currencies alloc] initWithDictionary:parsedResponse]);
+    }];
 }
 
 @end
