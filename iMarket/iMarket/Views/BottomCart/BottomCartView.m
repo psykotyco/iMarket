@@ -16,6 +16,8 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *totalAmount;
 
+@property (nonatomic, assign) CGFloat totalAmountValue;
+
 @end
 
 @implementation BottomCartView
@@ -41,7 +43,7 @@
 #pragma mark - ---- INTERNAL
 
 - (void) viewTapped:(id) sender {
-    if ([self.delegate respondsToSelector:@selector(bottomCartViewDidSelected:)]) {
+    if (self.totalAmountValue > 0 &&[self.delegate respondsToSelector:@selector(bottomCartViewDidSelected:)]) {
         [self.delegate bottomCartViewDidSelected:self];
     }
 }
@@ -49,11 +51,10 @@
 #pragma mark - ---- PUBLIC
 
 - (void) refreshCart {
-    __block CGFloat totalAmountValue;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        totalAmountValue = [[DataManager sharedInstance] getCartTotalAmount];
+        self.totalAmountValue = [[DataManager sharedInstance] getCartTotalAmount];
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.totalAmount.text = [NSString stringWithFormat:@"%@ %.2f", Default_Currency_Symbol, totalAmountValue];
+            self.totalAmount.text = [NSString stringWithFormat:@"%@ %.2f", Default_Currency_Symbol, self.totalAmountValue];
         });
     });
 

@@ -31,6 +31,9 @@
 
 "productList_navigationBar_title" = "Market";
 "productDetail_navigationBar_title" = "Product Detail";
+"cartDetail_modal_title" = "Cart Summary";
 
 // Outlets
+
 "productDetail_addToCart_button_title" = "Add to cart";
+"cartDetail_changeCurrency_button_title" = "Change currency";

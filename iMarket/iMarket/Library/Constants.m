@@ -81,10 +81,12 @@ NSString *const Storyboard_Main = @"Main";
 
 NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key = @"productList_navigationBar_title";
 NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key = @"productDetail_navigationBar_title";
+NSString *const Layout_CartDetail_Modal_Title_Localizable_Key = @"cartDetail_modal_title";
 
 // Outlets
 
 NSString *const ProductDetail_AddToCart_Button_Title_Localizable_Key = @"productDetail_addToCart_button_title";
+NSString *const CartDetail_ChangeCurrency_Button_Title_Localizable_Key = @"cartDetail_changeCurrency_button_title";
 
 // Products
 

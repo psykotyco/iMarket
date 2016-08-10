@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hCi-Xe-TbZ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="459.5"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="460"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -46,25 +46,25 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IKh-Yp-TrC" id="JyL-ll-Bnb">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lur-pq-OOD" userLabel="Image View - Product Image">
-                                                    <rect key="frame" x="20" y="28" width="43.5" height="43.5"/>
+                                                    <rect key="frame" x="20" y="28" width="44" height="44"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="lur-pq-OOD" secondAttribute="height" multiplier="1:1" id="Rcv-k2-Cmv"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-rV-aX3" userLabel="Label - Product Name">
-                                                    <rect key="frame" x="73.5" y="33" width="392" height="32.5"/>
+                                                    <rect key="frame" x="74" y="33" width="392" height="33"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-mB-0rh" userLabel="Label - Product Price">
-                                                    <rect key="frame" x="485.5" y="37.5" width="46.5" height="23"/>
+                                                    <rect key="frame" x="486" y="38" width="46" height="23"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,7 +111,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKt-wf-BUi" userLabel="View - Bottom Cart">
-                                <rect key="frame" x="0.0" y="523.5" width="600" height="76.5"/>
+                                <rect key="frame" x="0.0" y="524" width="600" height="76"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -173,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kB-CD-ofe" userLabel="View - Detail Container">
-                                <rect key="frame" x="0.0" y="64" width="600" height="459.5"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="460"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJB-sF-3hB" userLabel="View - Product Info">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
@@ -186,21 +186,21 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svO-KY-WPD" userLabel="Label - Product Name">
-                                                <rect key="frame" x="115" y="20" width="42" height="20.5"/>
+                                                <rect key="frame" x="115" y="20" width="42" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-ne-V0e" userLabel="Label - Product Price">
-                                                <rect key="frame" x="115" y="60" width="42" height="20.5"/>
+                                                <rect key="frame" x="115" y="60" width="42" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3x5-ig-kCG" userLabel="Button - Add to Cart">
-                                                <rect key="frame" x="534" y="42.5" width="46" height="30"/>
+                                                <rect key="frame" x="534" y="43" width="46" height="30"/>
                                                 <animations/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
@@ -229,7 +229,7 @@
                                         </variation>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cpS-dq-kSc" userLabel="Text View - Product Description">
-                                        <rect key="frame" x="0.0" y="115" width="600" height="344.5"/>
+                                        <rect key="frame" x="0.0" y="115" width="600" height="345"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -251,7 +251,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFy-Yu-rwD" userLabel="View - Bottom Cart">
-                                <rect key="frame" x="0.0" y="523.5" width="600" height="76.5"/>
+                                <rect key="frame" x="0.0" y="524" width="600" height="76"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -315,10 +315,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tx0-3P-nPk" userLabel="View - Header ">
-                                <rect key="frame" x="0.0" y="20" width="600" height="128"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="39"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-ig-OJI" userLabel="Button - Close">
-                                        <rect key="frame" x="20" y="47" width="20" height="20"/>
+                                        <rect key="frame" x="560" y="9" width="20" height="20"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0Sf-ig-OJI" secondAttribute="height" id="G9a-Uy-DX2"/>
@@ -329,52 +329,63 @@
                                             <action selector="closePressed:" destination="d6d-lx-JTj" eventType="touchUpInside" id="Ywx-K0-PRf"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PW0-Gp-LWJ" userLabel="Label - Layout Title">
+                                        <rect key="frame" x="279" y="9" width="42" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="0Sf-ig-OJI" firstAttribute="leading" secondItem="tx0-3P-nPk" secondAttribute="leading" constant="20" id="1zq-lU-mdl"/>
-                                    <constraint firstItem="0Sf-ig-OJI" firstAttribute="top" secondItem="tx0-3P-nPk" secondAttribute="top" constant="47" id="2Z1-QX-xBZ"/>
-                                    <constraint firstAttribute="height" constant="128" id="T6U-xS-hHi"/>
+                                    <constraint firstItem="PW0-Gp-LWJ" firstAttribute="centerY" secondItem="tx0-3P-nPk" secondAttribute="centerY" id="9dO-YD-L9q"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Sf-ig-OJI" secondAttribute="trailing" constant="20" id="Evw-uv-zv8"/>
+                                    <constraint firstItem="0Sf-ig-OJI" firstAttribute="centerY" secondItem="tx0-3P-nPk" secondAttribute="centerY" id="ITa-cN-TMB"/>
+                                    <constraint firstItem="PW0-Gp-LWJ" firstAttribute="centerX" secondItem="tx0-3P-nPk" secondAttribute="centerX" id="nhi-HW-dmD"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMt-eY-027" userLabel="View - Summary">
-                                <rect key="frame" x="0.0" y="148" width="600" height="91"/>
+                                <rect key="frame" x="0.0" y="59" width="600" height="77"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-bh-Yfb" userLabel="Label - Total Products">
-                                        <rect key="frame" x="20" y="20" width="42" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-bh-Yfb" userLabel="Label - Total Products">
+                                        <rect key="frame" x="20" y="10" width="42" height="28"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qv-AV-ht1" userLabel="Label - Total Price">
-                                        <rect key="frame" x="20" y="50.5" width="42" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qv-AV-ht1" userLabel="Label - Total Price">
+                                        <rect key="frame" x="20" y="48" width="42" height="20"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-be-V1W" userLabel="Button - Change Currency">
-                                        <rect key="frame" x="534" y="30.5" width="46" height="30"/>
+                                        <rect key="frame" x="534" y="24" width="46" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="changeCurrencyPressed:" destination="d6d-lx-JTj" eventType="touchUpInside" id="kAg-5N-q1p"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="3Yq-bh-Yfb" firstAttribute="top" secondItem="YMt-eY-027" secondAttribute="top" constant="20" id="5Ha-LH-CUY"/>
+                                    <constraint firstItem="3Yq-bh-Yfb" firstAttribute="top" secondItem="YMt-eY-027" secondAttribute="top" constant="10" id="5Ha-LH-CUY"/>
                                     <constraint firstItem="1Qv-AV-ht1" firstAttribute="leading" secondItem="3Yq-bh-Yfb" secondAttribute="leading" id="Jii-62-zb0"/>
                                     <constraint firstItem="1Qv-AV-ht1" firstAttribute="top" secondItem="3Yq-bh-Yfb" secondAttribute="bottom" constant="10" id="LYc-lQ-Kxo"/>
-                                    <constraint firstAttribute="bottom" secondItem="1Qv-AV-ht1" secondAttribute="bottom" constant="20" id="SuE-Cu-vO0"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Qv-AV-ht1" secondAttribute="bottom" constant="10" id="SuE-Cu-vO0"/>
                                     <constraint firstItem="t6V-be-V1W" firstAttribute="centerY" secondItem="YMt-eY-027" secondAttribute="centerY" id="kxO-QJ-xT5"/>
                                     <constraint firstItem="3Yq-bh-Yfb" firstAttribute="leading" secondItem="YMt-eY-027" secondAttribute="leading" constant="20" id="lHC-iZ-Gyj"/>
                                     <constraint firstAttribute="trailing" secondItem="t6V-be-V1W" secondAttribute="trailing" constant="20" id="zmm-xk-EeU"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UNF-uk-SV4" userLabel="Table View - Products In Cart">
-                                <rect key="frame" x="0.0" y="239" width="600" height="361"/>
+                                <rect key="frame" x="0.0" y="136" width="600" height="464"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -382,32 +393,32 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Wk-OB-WwL" id="IHc-9f-pxr">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Txj-k0-Zqy" userLabel="Image View - Product Image">
-                                                    <rect key="frame" x="20" y="28" width="43.5" height="43.5"/>
+                                                    <rect key="frame" x="20" y="28" width="44" height="44"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Txj-k0-Zqy" secondAttribute="height" multiplier="1:1" id="SOE-sX-ypp"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cP2-Tg-NLi" userLabel="Label - Product Name">
-                                                    <rect key="frame" x="73.5" y="28" width="64" height="32.5"/>
+                                                    <rect key="frame" x="74" y="28" width="64" height="33"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUF-XN-IMy" userLabel="Label - Product Price">
-                                                    <rect key="frame" x="73.5" y="62" width="46.5" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUF-XN-IMy" userLabel="Label - Product Price">
+                                                    <rect key="frame" x="74" y="61" width="47" height="23"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhG-qd-PAr" userLabel="Label - Product Quantity">
-                                                    <rect key="frame" x="485" y="39.5" width="42" height="20.5"/>
+                                                    <rect key="frame" x="485" y="39" width="42" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -458,6 +469,8 @@
                             <constraint firstAttribute="trailing" secondItem="tx0-3P-nPk" secondAttribute="trailing" id="We6-qH-Jad"/>
                             <constraint firstItem="UNF-uk-SV4" firstAttribute="top" secondItem="YMt-eY-027" secondAttribute="bottom" id="cA5-oh-nNq"/>
                             <constraint firstItem="tx0-3P-nPk" firstAttribute="leading" secondItem="ET3-0X-gI3" secondAttribute="leading" id="do4-wI-hXN"/>
+                            <constraint firstItem="UNF-uk-SV4" firstAttribute="height" secondItem="YMt-eY-027" secondAttribute="height" multiplier="6:1" id="mE6-to-mcf"/>
+                            <constraint firstItem="YMt-eY-027" firstAttribute="height" secondItem="tx0-3P-nPk" secondAttribute="height" multiplier="2:1" id="moC-uw-uPp"/>
                             <constraint firstAttribute="trailing" secondItem="YMt-eY-027" secondAttribute="trailing" id="uKG-iR-jMe"/>
                             <constraint firstAttribute="trailing" secondItem="UNF-uk-SV4" secondAttribute="trailing" id="vjF-S1-xMQ"/>
                             <constraint firstItem="UNF-uk-SV4" firstAttribute="leading" secondItem="ET3-0X-gI3" secondAttribute="leading" id="wTn-01-WLe"/>
@@ -465,6 +478,8 @@
                     </view>
                     <connections>
                         <outlet property="cartProducts" destination="UNF-uk-SV4" id="OA0-2n-X6j"/>
+                        <outlet property="changeCurrency" destination="t6V-be-V1W" id="d8P-Si-AsW"/>
+                        <outlet property="layoutTitle" destination="PW0-Gp-LWJ" id="ESm-nx-54w"/>
                         <outlet property="totalPrice" destination="1Qv-AV-ht1" id="lu9-Wn-Buq"/>
                         <outlet property="totalProducts" destination="3Yq-bh-Yfb" id="mWh-Lv-ojb"/>
                     </connections>

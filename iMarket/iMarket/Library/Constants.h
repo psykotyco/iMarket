@@ -42,9 +42,11 @@ extern NSString *const Storyboard_Main;
 // Layout Titles
 extern NSString *const Layout_ProductList_NavigationBar_Title_Localizable_Key;
 extern NSString *const Layout_ProductDetail_NavigationBar_Title_Localizable_Key;
+extern NSString *const Layout_CartDetail_Modal_Title_Localizable_Key;
 
 // Outlets
 extern NSString *const ProductDetail_AddToCart_Button_Title_Localizable_Key;
+extern NSString *const CartDetail_ChangeCurrency_Button_Title_Localizable_Key;
 
 // Products
 extern NSString *const Product_Package_Conjunction_Localizable_Key;

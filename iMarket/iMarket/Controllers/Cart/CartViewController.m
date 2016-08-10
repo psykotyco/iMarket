@@ -23,15 +23,18 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 
 @interface CartViewController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, weak) IBOutlet UILabel *layoutTitle;
 @property (nonatomic, weak) IBOutlet UITableView *cartProducts;
 @property (nonatomic, weak) IBOutlet UILabel *totalPrice;
 @property (nonatomic, weak) IBOutlet UILabel *totalProducts;
+@property (nonatomic, weak) IBOutlet UIButton *changeCurrency;
 
 @property (nonatomic, strong) NSArray *products;
 @property (nonatomic, assign) NSInteger numberProductsInCart;
 @property (nonatomic, assign) CGFloat totalAmount;
 
 - (IBAction)closePressed:(id)sender;
+- (IBAction)changeCurrencyPressed:(id)sender;
 
 @end
 
@@ -53,9 +56,15 @@ static int const kProductCart_Cell_Remove_Tag = 14;
         self.totalAmount = [[DataManager sharedInstance] getCartTotalAmount];
         self.numberProductsInCart = [[DataManager sharedInstance] getProductsQuantityInCart];
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.totalPrice.text = [NSString stringWithFormat:@"%@ %.2f", Default_Currency_Symbol, self.totalAmount];
-            self.totalProducts.text = [NSString stringWithFormat:@"%li", self.numberProductsInCart];
-            [self.cartProducts reloadData];
+            if (self.totalAmount > 0) {
+                self.layoutTitle.text = NSLocalizedString(Layout_CartDetail_Modal_Title_Localizable_Key, nil);
+                self.totalPrice.text = [NSString stringWithFormat:@"%@ %.2f", Default_Currency_Symbol, self.totalAmount];
+                self.totalProducts.text = [NSString stringWithFormat:@"%li", self.numberProductsInCart];
+                [self.changeCurrency setTitle:NSLocalizedString(CartDetail_ChangeCurrency_Button_Title_Localizable_Key, nil) forState:UIControlStateNormal];
+                [self.cartProducts reloadData];
+            } else {
+                [self closePressed:nil];
+            }
         });
     });
 }
@@ -98,6 +107,10 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 
 - (IBAction)closePressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)changeCurrencyPressed:(id)sender {
+
 }
 
 - (void)removeProductSelected:(UIButton *)sender {
