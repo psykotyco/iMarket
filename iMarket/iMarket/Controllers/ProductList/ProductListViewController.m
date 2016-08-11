@@ -55,7 +55,7 @@ static int const kProductList_Cell_Price_Tag = 12;
 - (void) loadDatasAndRefreshInterface {
     self.loading.hidden = NO;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        self.products = [[DataManager sharedInstance] getProducts];
+        self.products = [self.dataManager getProducts];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.loading.hidden = YES;
             [self.productTable reloadData];

@@ -13,6 +13,7 @@
 #import "BottomCartView.h"
 #import "CartViewController.h"
 #import "Constants.h"
+#import "DataManager.h"
 
 @interface BaseViewController () <BottomCartViewDelegate>
 
@@ -23,6 +24,15 @@
 @implementation BaseViewController
 
 #pragma mark - ---- LIFE CYCLE
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _dataManager = [DataManager new];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

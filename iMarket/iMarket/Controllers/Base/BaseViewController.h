@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewControllerProtocol.h"
 
+@class DataManager;
+
 @interface BaseViewController : UIViewController <BaseViewControllerProtocol>
 
 @property (nonatomic, weak) IBOutlet UIView *loading;
+@property (nonatomic, strong) DataManager *dataManager;
 
 @end

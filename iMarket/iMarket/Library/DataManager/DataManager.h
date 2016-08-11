@@ -14,10 +14,6 @@
 
 @interface DataManager : NSObject
 
-+ (id) sharedInstance;
-
-- (instancetype) init __attribute__((unavailable("init not available")));
-
 // Products
 
 - (NSArray *) getProducts;

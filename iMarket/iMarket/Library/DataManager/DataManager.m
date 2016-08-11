@@ -16,23 +16,11 @@
 
 @interface DataManager ()
 
-@property (nonatomic, strong) Cart *cart;
-
 @end
 
 @implementation DataManager
 
 #pragma mark - ---- LIFE CYCLE
-
-+ (id) sharedInstance {
-    static DataManager *sharedDataManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedDataManager = [self new];
-        sharedDataManager.cart = [Cart new];
-    });
-    return  sharedDataManager;
-}
 
 #pragma mark - ---- INTERNAL
 
@@ -74,29 +62,29 @@
 #pragma mark - ---- ---- CART
 
 - (CGFloat) getCartTotalAmount {
-    return [self.cart totalAmount];
+    return [[Cart sharedInstance] totalAmount];
 }
 
 - (void) addProductToCart:(Product *) product quantity:(NSInteger) quantity {
-    [self.cart addProduct:product quantity:quantity];
+    [[Cart sharedInstance] addProduct:product quantity:quantity];
     [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Cart_Product_Added object:nil];
 }
 
 - (void) removeProductToCart:(Product *) product quantity:(NSInteger) quantity {
-    [self.cart removeProduct:product quantity:quantity];
+    [[Cart sharedInstance] removeProduct:product quantity:quantity];
         [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Cart_Product_Removed object:nil];
 }
 
 - (NSInteger) getProductsQuantityInCart {
-    return [self.cart getTotalProductsInCart];
+    return [[Cart sharedInstance] getTotalProductsInCart];
 }
 
 - (NSInteger) getProductQuantityWithProductId:(NSString *) productId {
-    return [self.cart getProductQuantityWithProductId:productId];
+    return [[Cart sharedInstance] getProductQuantityWithProductId:productId];
 }
 
 - (NSArray *) getProductsInCart {
-    return [self.cart products];
+    return [[Cart sharedInstance] products];
 }
 
 #pragma mark - ---- ---- CURRENCIES

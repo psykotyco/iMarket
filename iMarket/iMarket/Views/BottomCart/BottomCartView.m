@@ -17,6 +17,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *totalAmount;
 
 @property (nonatomic, assign) CGFloat totalAmountValue;
+@property (nonatomic, strong) DataManager *dataManager;
 
 @end
 
@@ -33,6 +34,7 @@
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
     [self addGestureRecognizer:tapGesture];
     
+    self.dataManager = [DataManager new];
     [self refreshCart];
 }
 
@@ -52,7 +54,7 @@
 
 - (void) refreshCart {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        self.totalAmountValue = [[DataManager sharedInstance] getCartTotalAmount];
+        self.totalAmountValue = [self.dataManager getCartTotalAmount];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.totalAmount.text = [NSString stringWithFormat:@"%@ %.2f", Default_Currency_Symbol, self.totalAmountValue];
         });

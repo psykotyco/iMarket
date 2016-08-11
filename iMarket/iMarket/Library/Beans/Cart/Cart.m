@@ -21,6 +21,15 @@
 
 #pragma mark - ---- LIFE CYCLE
 
++ (id) sharedInstance {
+    static Cart *sharedCart = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedCart = [self new];
+    });
+    return  sharedCart;
+}
+
 - (instancetype)init
 {
     self = [super init];

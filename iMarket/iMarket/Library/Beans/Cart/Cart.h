@@ -16,6 +16,9 @@
 @property (nonatomic, readonly) NSArray *products;
 @property (nonatomic, readonly) CGFloat totalAmount;
 
++ (id) sharedInstance;
+- (instancetype) init __attribute__((unavailable("init not available")));
+
 - (void) addProduct:(Product *) product quantity:(NSInteger) quantity;
 - (void) removeProduct:(Product *) product quantity:(NSInteger) quantity;
 - (NSInteger) getProductQuantityWithProductId:(NSString *) productId;

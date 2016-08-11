@@ -63,9 +63,9 @@ static int const kProductCart_Cell_Remove_Tag = 14;
 - (void) loadDatasAndRefreshInterface {
     self.loading.hidden = NO;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        self.products = [[DataManager sharedInstance] getProductsInCart];
-        self.totalAmount = [[DataManager sharedInstance] getCartTotalAmount];
-        self.numberProductsInCart = [[DataManager sharedInstance] getProductsQuantityInCart];
+        self.products = [self.dataManager getProductsInCart];
+        self.totalAmount = [self.dataManager getCartTotalAmount];
+        self.numberProductsInCart = [self.dataManager getProductsQuantityInCart];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.loading.hidden = YES;
             if (self.totalAmount > 0) {
@@ -100,7 +100,7 @@ static int const kProductCart_Cell_Remove_Tag = 14;
     productImage.image = [UIImage imageNamed:product.imageName];
     productName.text = product.name;
     productPrice.text = [product getFormattedStringPriceByPackage];
-    productQuantity.text = [NSString stringWithFormat:@"%li",(long)[[DataManager sharedInstance] getProductQuantityWithProductId:product.identifier]];
+    productQuantity.text = [NSString stringWithFormat:@"%li",(long)[self.dataManager getProductQuantityWithProductId:product.identifier]];
     [productRemove addTarget:self action:@selector(removeProductSelected:) forControlEvents:UIControlEventTouchUpInside];
     
     return result;
@@ -142,7 +142,7 @@ static int const kProductCart_Cell_Remove_Tag = 14;
         self.pickerView = nil;
     } else {
         self.loading.hidden = NO;
-        [[DataManager sharedInstance] getCurrenciesWithCompletionBlock:^(Currencies *currencies) {
+        [self.dataManager getCurrenciesWithCompletionBlock:^(Currencies *currencies) {
             self.loading.hidden = YES;
             self.currencies = currencies;
             
@@ -161,7 +161,7 @@ static int const kProductCart_Cell_Remove_Tag = 14;
     Product* productSelected = [self.products objectAtIndex:[[self.cartProducts indexPathForCell:cell] row]];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [[DataManager sharedInstance] removeProductToCart:productSelected quantity:Default_Items_Number_Add_Remove_To_Cart];
+        [self.dataManager removeProductToCart:productSelected quantity:Default_Items_Number_Add_Remove_To_Cart];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self loadDatasAndRefreshInterface];
         });

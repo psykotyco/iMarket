@@ -32,7 +32,7 @@ const NSTimeInterval kNetwork_Tests_Timeout = 20;
 
 - (void)testGetCurrencies_Ok {
     __block XCTestExpectation *getCurrenciesOkExpectation = [self expectationWithDescription:@"get server currencies ok"];
-    [[DataManager sharedInstance] getCurrenciesWithCompletionBlock:^(Currencies *currencies) {
+    [[DataManager new] getCurrenciesWithCompletionBlock:^(Currencies *currencies) {
         XCTAssert(currencies.currencies.count > 0, "Currencies are empty!!!!");
         [getCurrenciesOkExpectation fulfill];
     }];
@@ -43,24 +43,24 @@ const NSTimeInterval kNetwork_Tests_Timeout = 20;
 }
 
 - (void)testGetProductsNumber_Ok {
-    NSArray *products = [[DataManager sharedInstance] getProducts];
+    NSArray *products = [[DataManager new] getProducts];
     XCTAssert(products.count == 4, "The prodcuct number has to be 4!!!!");
 }
 
 - (void)testProductsDetail_Name_Ok {
-    NSArray *products = [[DataManager sharedInstance] getProducts];
+    NSArray *products = [[DataManager new] getProducts];
     
     for (Product *product in products) {
-        Product *productDetail = [[DataManager sharedInstance] getProductDetailWithId:Product_Identifier[[products indexOfObject:product]]];
+        Product *productDetail = [[DataManager new] getProductDetailWithId:Product_Identifier[[products indexOfObject:product]]];
         XCTAssert([product.name isEqualToString:productDetail.name], "Product Detail Name: %@ Is not correct", productDetail.name);
     }
 }
 
 - (void)testProductsDetail_Identifier_Ok {
-    NSArray *products = [[DataManager sharedInstance] getProducts];
+    NSArray *products = [[DataManager new] getProducts];
     
     for (Product *product in products) {
-        Product *productDetail = [[DataManager sharedInstance] getProductDetailWithId:Product_Identifier[[products indexOfObject:product]]];
+        Product *productDetail = [[DataManager new] getProductDetailWithId:Product_Identifier[[products indexOfObject:product]]];
         XCTAssert([product.identifier isEqualToString:productDetail.identifier], "Product Detail identifier: %@ Is not correct", productDetail.identifier);
     }
 }
